@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "esbuild ./src/index.js --minify --outfile=lib/index.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postinstall": "cd node_modules/markdown-truncate && npm install && npm run build"
   },
   "author": "Sílvia Mur Blanch <pchiwan@gmail.com>",
   "license": "ISC",
