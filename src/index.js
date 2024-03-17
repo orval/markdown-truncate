@@ -60,7 +60,7 @@ const replaceFormatMarkersWithPlaceholders = text =>
     .replace(
       BACKTICK_REGEXP,
       `${BACKTICK_PLACEHOLDER_REGEXP.source}$2${BACKTICK_PLACEHOLDER_REGEXP.source}`
-    )
+    );
 
 const replaceFormatPlaceholdersWithMarkers = text =>
   text
